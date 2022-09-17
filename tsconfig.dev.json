@@ -39,7 +39,9 @@
     "pages/**/*.ts",
     "test/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".projenrc.ts",
+    "projenrc/**/*.ts"
   ],
   "exclude": [
     "node_modules"
