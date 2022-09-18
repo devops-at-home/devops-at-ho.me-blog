@@ -1,16 +1,30 @@
 {
   "dependencies": [
     {
+      "name": "@types/jest",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
-      "version": "^12",
+      "version": "^14",
       "type": "build"
     },
     {
-      "name": "@types/react",
+      "name": "aws-cdk",
+      "version": "^2.42.0",
       "type": "build"
     },
     {
-      "name": "@types/react-dom",
+      "name": "esbuild",
+      "type": "build"
+    },
+    {
+      "name": "jest",
+      "type": "build"
+    },
+    {
+      "name": "jest-junit",
+      "version": "^13",
       "type": "build"
     },
     {
@@ -19,11 +33,11 @@
       "type": "build"
     },
     {
-      "name": "prettier",
+      "name": "projen",
       "type": "build"
     },
     {
-      "name": "projen",
+      "name": "ts-jest",
       "type": "build"
     },
     {
@@ -35,27 +49,13 @@
       "type": "build"
     },
     {
-      "name": "autoprefixer",
+      "name": "aws-cdk-lib",
+      "version": "^2.42.0",
       "type": "runtime"
     },
     {
-      "name": "next",
-      "type": "runtime"
-    },
-    {
-      "name": "postcss",
-      "type": "runtime"
-    },
-    {
-      "name": "react",
-      "type": "runtime"
-    },
-    {
-      "name": "react-dom",
-      "type": "runtime"
-    },
-    {
-      "name": "tailwindcss",
+      "name": "constructs",
+      "version": "^10.0.5",
       "type": "runtime"
     }
   ],

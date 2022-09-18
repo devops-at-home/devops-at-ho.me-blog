@@ -24,6 +24,10 @@
         }
       ]
     },
+    "bundle": {
+      "name": "bundle",
+      "description": "Prepare assets"
+    },
     "clobber": {
       "name": "clobber",
       "description": "hard resets to HEAD of origin and cleans the local repo",
@@ -58,15 +62,7 @@
     },
     "compile": {
       "name": "compile",
-      "description": "Only compile",
-      "steps": [
-        {
-          "exec": "tsc --build"
-        },
-        {
-          "exec": "next build"
-        }
-      ]
+      "description": "Only compile"
     },
     "default": {
       "name": "default",
@@ -77,12 +73,30 @@
         }
       ]
     },
-    "dev": {
-      "name": "dev",
-      "description": "Starts the Next.js application in development mode",
+    "deploy": {
+      "name": "deploy",
+      "description": "Deploys your CDK app to the AWS cloud",
       "steps": [
         {
-          "exec": "next dev"
+          "exec": "cdk deploy"
+        }
+      ]
+    },
+    "destroy": {
+      "name": "destroy",
+      "description": "Destroys your cdk app in the AWS cloud",
+      "steps": [
+        {
+          "exec": "cdk destroy"
+        }
+      ]
+    },
+    "diff": {
+      "name": "diff",
+      "description": "Diffs the currently deployed app against your code",
+      "steps": [
+        {
+          "exec": "cdk diff"
         }
       ]
     },
@@ -98,22 +112,18 @@
         }
       ]
     },
-    "export": {
-      "name": "export",
-      "description": "Exports the application for production deployment",
-      "steps": [
-        {
-          "exec": "next export"
-        }
-      ]
-    },
     "package": {
       "name": "package",
       "description": "Creates the distribution package"
     },
     "post-compile": {
       "name": "post-compile",
-      "description": "Runs after successful compilation"
+      "description": "Runs after successful compilation",
+      "steps": [
+        {
+          "spawn": "synth:silent"
+        }
+      ]
     },
     "post-upgrade": {
       "name": "post-upgrade",
@@ -123,27 +133,50 @@
       "name": "pre-compile",
       "description": "Prepare the project for compilation"
     },
-    "server": {
-      "name": "server",
-      "description": "Starts the Next.js application in production mode",
+    "synth": {
+      "name": "synth",
+      "description": "Synthesizes your cdk app into cdk.out",
       "steps": [
         {
-          "exec": "next start"
+          "exec": "cdk synth"
         }
       ]
     },
-    "telemetry": {
-      "name": "telemetry",
-      "description": "Checks the status of Next.js telemetry collection",
+    "synth:silent": {
+      "name": "synth:silent",
+      "description": "Synthesizes your cdk app into cdk.out and suppresses the template in stdout (part of \"yarn build\")",
       "steps": [
         {
-          "exec": "next telemetry"
+          "exec": "cdk synth -q"
         }
       ]
     },
     "test": {
       "name": "test",
-      "description": "Run tests"
+      "description": "Run tests",
+      "steps": [
+        {
+          "exec": "jest --passWithNoTests --all --updateSnapshot"
+        }
+      ]
+    },
+    "test:update": {
+      "name": "test:update",
+      "description": "Update jest snapshots",
+      "steps": [
+        {
+          "exec": "jest --updateSnapshot"
+        }
+      ]
+    },
+    "test:watch": {
+      "name": "test:watch",
+      "description": "Run jest in watch mode",
+      "steps": [
+        {
+          "exec": "jest --watch"
+        }
+      ]
     },
     "upgrade": {
       "name": "upgrade",
@@ -186,10 +219,13 @@
     },
     "watch": {
       "name": "watch",
-      "description": "Watch & compile in the background",
+      "description": "Watches changes in your source code and rebuilds and deploys to the current account",
       "steps": [
         {
-          "exec": "tsc --build -w"
+          "exec": "cdk deploy --hotswap"
+        },
+        {
+          "exec": "cdk watch"
         }
       ]
     }
