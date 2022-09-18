@@ -8,7 +8,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
     eslint: false,
     name: 'devops-at-ho.me-blog',
     projenrcTs: true,
-    gitignore: ['.idea'],
+    gitignore: ['.idea', 'build'],
     prettier: true,
     prettierOptions: {
         settings: {
