@@ -1,6 +1,14 @@
 {
   "dependencies": [
     {
+      "name": "@sls-next/cdk-construct",
+      "type": "build"
+    },
+    {
+      "name": "@sls-next/lambda-at-edge",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -30,6 +38,10 @@
     {
       "name": "npm-check-updates",
       "version": "^15",
+      "type": "build"
+    },
+    {
+      "name": "prettier",
       "type": "build"
     },
     {
