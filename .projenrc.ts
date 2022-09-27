@@ -33,4 +33,8 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 
 project.jest!.addTestMatch('**/?(*.)@(spec|test).[tj]s?(x)');
 
+project.preCompileTask.prependExec('yarn install', {
+    cwd: 'app',
+});
+
 project.synth();
