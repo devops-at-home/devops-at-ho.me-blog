@@ -1,32 +1,25 @@
-import { App, Stack, StackProps } from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import { NextJSLambdaEdge } from '@sls-next/cdk-construct';
+import { App, Environment } from 'aws-cdk-lib';
 import { Builder } from '@sls-next/lambda-at-edge';
+import { StackFactory } from './stacks/stack-factory';
 
-export class MyStack extends Stack {
-    constructor(scope: Construct, id: string, props: StackProps = {}) {
-        super(scope, id, props);
-
-        new NextJSLambdaEdge(this, 'NextJsApp', {
-            serverlessBuildOutDir: './build',
+export const setupBuild = async (app: App, env?: Environment) => {
+    const builder = new Builder('app', './build', { args: ['build'], cwd: 'app' });
+    await builder.build();
+    try {
+        new StackFactory(app, {
+            env,
         });
-    }
-}
-
-const env = {
-    account: process.env.CDK_DEFAULT_ACCOUNT,
-    region: process.env.CDK_DEFAULT_REGION,
-};
-
-const builder = new Builder('app', './build', { args: ['build'], cwd: 'app' });
-
-builder
-    .build()
-    .then(() => {
-        const app = new App();
-        new MyStack(app, `MyStack`, { env });
-    })
-    .catch((e) => {
+    } catch (e) {
         console.log(e);
         process.exit(1);
-    });
+    }
+    const { stacks } = app.synth();
+    return stacks;
+};
+
+const app = new App();
+
+setupBuild(app, {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
+});
