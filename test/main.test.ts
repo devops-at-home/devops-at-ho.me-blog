@@ -1,12 +1,10 @@
 import { App } from 'aws-cdk-lib';
 import { setupBuild } from '../src/main';
 
-describe('Integration test snapshots', async () => {
+test('Integration test snapshots', async () => {
     const app = new App();
 
     const stacks = await setupBuild(app);
 
-    test.each(stacks)(`$stackName`, (stack) => {
-        expect(stack.template).toMatchSnapshot();
-    });
+    stacks.forEach((stack) => expect(stack.template).toMatchSnapshot());
 });
