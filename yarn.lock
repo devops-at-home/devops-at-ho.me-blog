@@ -2920,9 +2920,9 @@ constants-browserify@1.0.0, constants-browserify@^1.0.0:
   integrity sha512-xFxOwqIzR/e1k1gLiWEophSCMqXcwVHIH7akf7b/vxcUeGunlj3hvZaaqxwHsTgn+IndtkQJgSztIDWeumWJDQ==
 
 constructs@^10.0.5:
-  version "10.1.136"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.136.tgz#53ba8147f473c045c94c17befcdd1919a0089ca6"
-  integrity sha512-/4gE6pzTwUdsThf6VEcOaOJ00WeayNDsN+O1joSPWNa4OFqUSXxitoVaflspPpIEjt6QI3JGY8mjgHw2GQxSSg==
+  version "10.1.137"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.137.tgz#821e3e02df43f98b8ba9f709f96eaa29c456ebef"
+  integrity sha512-jRuNdceHnCB1JRybA1QQL8ZPI704I6jvQmNgyhen3dvQPYfBkhbyNGVabnLPd5IDnnW4Q5y8XkYugLX2hwnLmg==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
