@@ -2880,9 +2880,9 @@ constants-browserify@1.0.0, constants-browserify@^1.0.0:
   integrity sha512-xFxOwqIzR/e1k1gLiWEophSCMqXcwVHIH7akf7b/vxcUeGunlj3hvZaaqxwHsTgn+IndtkQJgSztIDWeumWJDQ==
 
 constructs@^10.0.5:
-  version "10.1.162"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.162.tgz#3e845c8fa68eb3c7e87d993f9f6cc477e0568ddf"
-  integrity sha512-7baN0u86OKY5Cna7AzkFwcCKQo2caYZ/TMBNdUCj/1bYaz+k9KGhMsAQeXAdfK8UeJ18nqgE2HxQC2X+fErc2g==
+  version "10.1.163"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.163.tgz#4a3e9f4561723220fda9ca900b23adbf71f8a9fe"
+  integrity sha512-UdwRPc1CLyIaytDwmTVjDsCEgSKfy5pZ64f89RfhwB4hJTeAgDRMjHQ4pNBVDRLlPXmzXAaM5UKfr+HeGFRFoQ==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -5947,10 +5947,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.65.26:
-  version "0.65.26"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.26.tgz#845b61b6f827f5daae648d970d5ff001bae9d7e2"
-  integrity sha512-xtYD6rbSyP75NLFLcu91QhDRO2Ehvgn0KoJVv9mRsjPFnRr13OhXUc5e+gu30pdCz/Y13D9rFCLx1T9sS6x1Tg==
+projen@^0.65.27:
+  version "0.65.27"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.27.tgz#c570f00dd0fe891d09db43ba206b61bdecd63e93"
+  integrity sha512-tkylBpJvffZ5pD7b5voMuBTRImdB2gb1CRADd+WhA8UyoDlSkIQwpJVradxyF+JRIlQSEGmuN3MWViVrPDcMhg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6212,9 +6212,9 @@ rechoir@^0.6.2:
     resolve "^1.1.6"
 
 regenerator-runtime@^0.13.4:
-  version "0.13.10"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz#ed07b19616bcbec5da6274ebc75ae95634bfc2ee"
-  integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 registry-auth-token@^5.0.1:
   version "5.0.1"
