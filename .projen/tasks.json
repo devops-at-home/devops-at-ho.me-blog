@@ -204,7 +204,7 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@sls-next/cdk-construct,@sls-next/lambda-at-edge,@types/jest,@types/node,aws-cdk,esbuild,jest,jest-junit,prettier,projen,ts-jest,ts-node,typescript,aws-cdk-lib,constructs"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@sls-next/cdk-construct,@sls-next/lambda-at-edge,@types/jest,esbuild,jest,prettier,projen,ts-jest,ts-node,typescript"
         },
         {
           "exec": "yarn install --check-files"
