@@ -3521,9 +3521,9 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     minimalistic-assert "^1.0.1"
 
 hasown@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/hasown/-/hasown-2.0.0.tgz#f4c513d454a57b7c7e1650778de226b11700546c"
-  integrity sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/hasown/-/hasown-2.0.1.tgz#26f48f039de2c0f8d3356c223fb8d50253519faa"
+  integrity sha512-1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==
   dependencies:
     function-bind "^1.1.2"
 
@@ -5103,10 +5103,10 @@ process@0.11.10, process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-projen@^0.79.16:
-  version "0.79.16"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.79.16.tgz#49604da02a95024ef0f789c35732ba6ca7f26693"
-  integrity sha512-Q0t7OJJHtXAJ4MiUaxInNqgbKEcY51P8BYQrK2sBvcAQl06BFbtcV+AaxIytPD//EklNMyxjXFzzHcHN307uMw==
+projen@^0.79.17:
+  version "0.79.17"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.79.17.tgz#f367e3419ccaa2a5f347c41ecfcb79baa5ba0938"
+  integrity sha512-RNTnt/p8oWNueDJtIlP3YfqCBCoobCe0v5hhAWi2DUZt2Be815CQFU6nE7zIDuvuYGzDEqJb2ztgpCvzF7visw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
