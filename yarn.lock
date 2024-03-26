@@ -3004,9 +3004,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.3.723, electron-to-chromium@^1.4.668:
-  version "1.4.715"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.715.tgz#bb16bcf2a3537962fccfa746b5c98c5f7404ff46"
-  integrity sha512-XzWNH4ZSa9BwVUQSDorPWAUQ5WGuYz7zJUNpNif40zFCiCl20t8zgylmreNmn26h5kiyw2lg7RfTmeMBsDklqg==
+  version "1.4.716"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.716.tgz#90c229ce0af2ad3b6e54472af1200e07f10293a4"
+  integrity sha512-t/MXMzFKQC3UfMDpw7V5wdB/UAB8dWx4hEsy+fpPYJWW3gqh3u5T1uXp6vR+H6dGCPBxkRo+YBcapBLvbGQHRw==
 
 elliptic@^6.5.3, elliptic@^6.5.5:
   version "6.5.5"
@@ -5140,10 +5140,10 @@ process@0.11.10, process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==
 
-projen@^0.80.12:
-  version "0.80.12"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.80.12.tgz#57451d4af20b557b9ad210d64d9ee78ac4dc53b9"
-  integrity sha512-emMvNBi8gGEeLg71IL/8Xx262hnPvzTnbl0Oua+Ce+25yXCAclGfDjzPGEoHgXpmaVYtFWp8jVnaGvXKfNTKgQ==
+projen@^0.80.13:
+  version "0.80.13"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.80.13.tgz#b2ed33b8a28ab238ce26fed09d4ab942b495d876"
+  integrity sha512-6kOhiKSr5pwIB07euAzuo84UMLg7dYc1kPG4aqdULeUOnPpHIQSIoF0R2GHcf6iT1ZldrLgrtYy7SRsluobdAA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
